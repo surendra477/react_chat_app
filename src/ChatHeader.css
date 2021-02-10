@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 .chatHeader{
-    background-color: #474b53;
+    background-color: #262626;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: rgb(0, 0, 0);
     padding: 10px;
+    border-bottom: 1px solid #42D7B7;
 }
 
 .chatHeader__hash{
-    color: rgb(0, 0, 0);
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     padding: 10px;
 }
@@ -22,13 +26,22 @@
 .chatHeader__right {
     display: flex;
     align-items: center;
-    flex: 0.2;
+    flex: 0.6;
     justify-content: space-between;
 }
 
 .chatHeader__right > .MuiSvgIcon-root{
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
+    color: #42D7B7;
+    /* background-color: #42D7B7; */
+    border-radius: 25px;
+    /* box-shadow: 1px 1px 20px #00d2c6, 
+            -3px -3px 15px #00ffff; */
+    /* background-color: #afd275; */
+            box-shadow: 
+              12px 12px 16px 0 rgba(68, 68, 68, 0.25),
+              -5px -5px 12px 0 rgba(66,215,183, 0.3);
 }
 
 .chatHeader__right>.MuiSvgIcon-root:hover {

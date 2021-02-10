@@ -11,38 +11,38 @@ import PeopleAltRoundedIcon from "@material-ui/icons/PeopleAltRounded";
 import { db, auth } from "./firebase";
 import SendRoundedIcon from "@material-ui/icons/SendRounded";
 
-import HelpRoundedIcon from "@material-ui/icons/HelpRounded" 
-function ChatHeader({channel}) {
-    return (
-      <div className="chatHeader">
-        <div className="chatHeader__left">
-          <h3>
-            <span className="chatHeader__hash">SIES GST, Nerul</span>
-            {/* {channel} */}
-          </h3>
-        </div>
-        <div className="chatHeader__right">
-          <ExitToAppIcon
-            onClick={() => {
-              auth.signOut();
-            }}
-          />
-          <NotificationsIcon />
-          <CallIcon />
-          <VideoCallIcon />
-          {/* <EditLocationRoundedIcon />
+import HelpRoundedIcon from "@material-ui/icons/HelpRounded"
+function ChatHeader({ channel }) {
+  return (
+    <div className="chatHeader">
+      <div className="chatHeader__left">
+        <h3><img src="/flow_logo.png" width="10%" alt="Not found"></img>
+          <span className="chatHeader__hash">SIES GST, Nerul</span>
+          {/* {channel} */}
+        </h3>
+      </div>
+      <div className="chatHeader__right">
+        <ExitToAppIcon
+          onClick={() => {
+            auth.signOut();
+          }}
+        />
+        <NotificationsIcon />
+        <CallIcon />
+        <VideoCallIcon />
+        {/* <EditLocationRoundedIcon />
                 <PeopleAltRoundedIcon /> */}
 
-          {/* <div className="chatHeader__search">
+        {/* <div className="chatHeader__search">
                     <input type="text" placeholder="search" />
                     <SearchRoundedIcon />
                 </div> */}
-          {/* <SendRoundedIcon /> */}
-          <MoreHorizIcon fontsize="large" />
-          {/* <HelpRoundedIcon /> */}
-        </div>
+        {/* <SendRoundedIcon /> */}
+        <MoreHorizIcon fontsize="large" />
+        {/* <HelpRoundedIcon /> */}
       </div>
-    );
+    </div>
+  );
 }
 
 export default ChatHeader

@@ -1,20 +1,25 @@
+body {
+    background-color: #262626;
+}
+
 .login{
     display: grid;
     place-items: center;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
 }
 
 .login > button {
     width: 300px;
-    background-color: #738adb;
-    color: #eff2f5;
+    background-color: #42D7B7;
+    color: #262626;
     font-weight: 800;
 }
 
 .login>button:hover {
-    background-color: black;
-    color: #738adb;
+    border: 1px solid #42D7B7;
+    background-color: #262626;
+    color: #42D7B7;
 }
 
 .login > div > img{

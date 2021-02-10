@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
 .message {
     display: flex;
     align-items: center;
@@ -6,16 +9,21 @@
 }
 
 .message__display{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
     background-color: #363a3f;
     border-radius: 3px;
     padding: 4px;
 }
 
 .message__info {
-    background-color: #474b53;
+    color: black;
+    background-color: rgb(66,215,183);
     padding: 10px;
     border-radius: 5px;
     margin-left: 20px;
+    /* box-shadow: 0px 6px 30px #42D7B7; */
 }
 
 .message__timestamp{

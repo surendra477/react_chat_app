@@ -2,20 +2,22 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    background-color:#363a3f ;
+    background-color: #ffffff ;
     height: 100vh;
 }
  
 .chat__input{
+    border: 1px solid #42d7b7;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: lightgray;
+    color: #42d7b7;
     padding: 15px;
-    border-radius: 5px;
-    margin: 20px;
-    border-top: 1px solid gray;
-    background-color:#474b53 ;
+    border-radius: 5px ;
+    margin: 0 20px 20px;
+    /* border-top: 1px solid gray; */
+    background-color:#262626 ;
+    box-shadow: 3px 3px 5px #42d7b7;
 }
 
 .chat__input > form > input {
@@ -39,6 +41,10 @@
 .chat__inputIcons >.MuiSvgIcon-root {
     padding: 5px;
     cursor: pointer;
+}
+
+.MuiSvgIcon-root:hover {
+    color: white;
 }
 
 .chat__messages{
