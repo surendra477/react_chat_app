@@ -58,7 +58,8 @@ setinput("")
           <form>
             <input
               value={input}
-              placeholder={`Message #${channelName}`}
+              // placeholder={`Message #${channelName}`}
+              placeholder = "Type a message"
               disabled={!channelName}
               onChange={(e) => setinput(e.target.value)}
             />

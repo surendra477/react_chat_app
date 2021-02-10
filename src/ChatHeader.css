@@ -1,13 +1,14 @@
 .chatHeader{
+    background-color: #474b53;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: gray;
+    color: rgb(0, 0, 0);
     padding: 10px;
 }
 
 .chatHeader__hash{
-    color: gray;
+    color: rgb(0, 0, 0);
     font-size: 30px;
     padding: 10px;
 }
@@ -21,7 +22,7 @@
 .chatHeader__right {
     display: flex;
     align-items: center;
-    flex: 0.5;
+    flex: 0.2;
     justify-content: space-between;
 }
 

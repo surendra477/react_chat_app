@@ -5,7 +5,16 @@
     color: white;
 }
 
+.message__display{
+    background-color: #363a3f;
+    border-radius: 3px;
+    padding: 4px;
+}
+
 .message__info {
+    background-color: #474b53;
+    padding: 10px;
+    border-radius: 5px;
     margin-left: 20px;
 }
 
