@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import logo from './logo.svg';
 import { useSelector,useDispatch } from "react-redux";
 import './App.css';
-import Slidebar from './Slidebar';
+
 import Chat from './Chat';
 import {selectUser,login,logout  } from "./features/userSlice";
 import Login from './Login';
@@ -32,7 +32,6 @@ function App() {
     <div className="app"> 
     {user ? (
       <>
-      {/* <Slidebar /> */}
       <Chat />
       </>
     ):(
